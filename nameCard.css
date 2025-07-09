@@ -5,6 +5,7 @@
 label[for="card1"]{
   font-family: "Copperplate Gothic", "Copperplate", serif;
   color: #734d0d;
+  text-shadow: 0.5px 0.5px 0 #ccc;
   .number h2 {
   font-size: 13px;
   font-weight: 200;
@@ -106,6 +107,7 @@ label[for="card2"]{
 
 label[for="card3"]{
   font-family: 'EB Garamond', serif;
+  text-shadow: 0.5px 0.5px 0 #ccc;
   .number h2 {
   font-size: 17px;
   font-weight: 200;
@@ -201,7 +203,7 @@ body {
 	width: 100%;
 	height: 100%;
 	backface-visibility: hidden;
-  
+  transform-style: preserve-3d;
 
 	.inner {
 		height: 100%;
@@ -237,14 +239,13 @@ body {
   overflow: hidden;
 	.inner {    
     padding-left: 10px;
-		grid-template-columns: repeat(4, auto);
+		grid-template-columns: repeat(2, auto);
 		grid-column-gap: 0.3em;
 		justify-items: center;
 	}
 
 	.info {
 		position: relative;
-    background-color: #ffff0066;
 		grid-row: 2;
 		span {
       padding-bottom: 1px;
@@ -268,7 +269,6 @@ body {
 		font-weight: 600;
 		line-height: 2em;
 		padding-right: 10px;
-    background-color: rgba(255,255,255,0.5);
 		overflow: auto;
   }
 }
