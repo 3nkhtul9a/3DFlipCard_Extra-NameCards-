@@ -216,8 +216,12 @@ body {
 .card {
 	width: 425px;
 	height: 275px;
-	margin: 2em;
-	perspective: 1500px;
+	margin: 2em; 
+  
+  &:hover{
+      filter: brightness(85%);
+  }
+  
 	.content {
     border: solid;
     border-width: 0.1px;
@@ -282,7 +286,7 @@ body {
   overflow: hidden;
 	.inner {    
     padding-left: 10px;
-		grid-template-columns: repeat(2, auto);
+		grid-template-columns: repeat(3, auto);
 		grid-column-gap: 0.3em;
 		justify-items: center;
 	}
